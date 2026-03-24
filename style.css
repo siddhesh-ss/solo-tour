@@ -12,15 +12,22 @@ nav {
     height: 50px;
     align-items: center;
 }
-nav .logo{
+/* nav .logo{
     font-size: 24px;
     color: #F9FAF8;
     padding: 11px 0px 0px 19px;
+} */
+nav .logo {
+    height: 44px;
+    width: 84px;
+    border-radius: 9px;
+    overflow: hidden;
 }
 .logo img{
-    height: 44px;
-    border-radius: 9px;
-    scale: 1.2;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transform: scale(1.15);
 }
 nav .links{
     display: flex;
@@ -28,6 +35,11 @@ nav .links{
     gap: 30px;
     font-size: 18px;
     color: #e5e7eb;
+}
+
+nav .links :hover{
+    cursor: pointer;
+    color: white;
 }
 
 main {
@@ -61,8 +73,19 @@ main .desc{
 main .image{
     border: 3px solid white;
     color: black;
-    background-color: grey;
     text-align: center ;
+    overflow: hidden;
+}
+
+main .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+
+main .image :hover{
+    transform: scale(1.2);
 }
 
 .ele{
@@ -89,7 +112,7 @@ button{
 
 /* Info */
 .info {
-    height: 471px;
+    height: 500px;
     /* border: 2px solid red; */
 }
 .info .info-text{
@@ -97,7 +120,7 @@ button{
     color: #1f2937;
     font-weight: 900;
     text-align: center;
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px 40px 0px;
 }
 
 .info .info-hero{
@@ -105,19 +128,26 @@ button{
     /* border: 2px solid red; */
     height: auto;
     justify-content: center;
-    gap: 45px;
+    gap: 38px;
 }
 .info .info-hero .box{
     /* border: 2px solid red; */
-    width:  181px;
     font-size: 18px;
+    width: 225px;
     text-align: center;
     color: #1f2937;
 }
 .box .info-image {
-    border: 4px solid #3883f6;
-    height: 181px;
+    border: 4px solid #1f2937;
+    height: 270px;
     border-radius: 14px;
+    overflow: hidden;
+}
+
+.box .info-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Quote */
